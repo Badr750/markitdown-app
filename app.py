@@ -4,6 +4,8 @@ from flask import Flask, request, jsonify, send_file, render_template
 from markitdown import MarkItDown
 from werkzeug.utils import secure_filename
 
+os.makedirs('uploads', exist_ok=True)
+
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024  # 50MB limit
