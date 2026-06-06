@@ -1,4 +1,4 @@
 flask
-markitdown
+markitdown[all]
 werkzeug
 gunicorn
